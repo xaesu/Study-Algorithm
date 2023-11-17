@@ -1,7 +1,5 @@
 # Study-Algorithm
-`내용 정리`ㅤhttps://velog.io/@xaesu
-
-`문제 풀이`ㅤGit Hub 
+`공부블로그`ㅤhttps://velog.io/@xaesu
 
 <br/>
 
