@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+	cin.tie(NULL);	// 입력 버퍼 비워주기 + 입력 받기
+	ios_base::sync_with_stdio(false);	// 독립 버퍼 사용 (Cpp/C 단독 사용)
+
+	int T;
+	cin >> T;
+
+	vector <int> add(T);
+	int a, b;
+
+	for (int i = 0; i < T; i++) {
+		cin >> a >> b;
+		add[i] = a + b;
+	}
+
+	for (int i = 0; i < T; i++) {
+		cout << add[i] << '\n';
+	}
+}
