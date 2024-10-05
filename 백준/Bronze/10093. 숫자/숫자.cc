@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int a, b;
+    long long a, b;
     cin >> a >> b;
 
     // 두 수가 같을 때 예외 처리
@@ -14,7 +14,7 @@ int main()
 
     // 작은 수를 a로 설정 (오름차순 출력)
     if (a > b) {
-        int temp = a;
+        long long temp = a;
         a = b;
         b = temp;
     }
@@ -23,7 +23,7 @@ int main()
     
 
     cout << n - 1 << '\n';
-    for (int i = a + 1; i < b; i++) {
+    for (long long i = a + 1; i < b; i++) {
         cout << i << ' ';
     }
 }
