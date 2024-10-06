@@ -1,15 +1,14 @@
 #include <iostream>
-#include <vector>
 #include <algorithm>
 using namespace std;
 
 int main() {
-	vector<int> num(3, 0);
+	int num[3];
 
 	for (int i = 0; i < 3; i++) {
 		cin >> num[i];
 	}
 
-	sort(num.begin(), num.end());
+	sort(num, num + 3);
 	cout << num[1];
 }
