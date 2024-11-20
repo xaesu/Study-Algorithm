@@ -6,17 +6,15 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    vector<pair<int, int>> points(n);
+    vector<pair<int, int>> coordinate(n);
 
     for (int i = 0; i < n; i++) {
-        cin >> points[i].first >> points[i].second;
+        cin >> coordinate[i].first >> coordinate[i].second;
     }
 
-    sort(points.begin(), points.end());
+    sort(coordinate.begin(), coordinate.end());
 
     for (int i = 0; i < n; i++) {
-        cout << points[i].first << " " << points[i].second << "\n";
+        cout << coordinate[i].first << " " << coordinate[i].second << "\n";
     }
-
-    return 0;
 }
