@@ -12,4 +12,5 @@
 
 <br>
 
-2. [BaekJoon - Online Jidge] 단계별 문제풀이
+2. [BaekJoon - Online Judge](https://www.acmicpc.net/user/wltn6)      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2024~
+   > *단계별 문제풀이*
