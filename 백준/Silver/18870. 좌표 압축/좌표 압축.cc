@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <unordered_map>
 using namespace std;
 
 int main() {
@@ -25,18 +24,8 @@ int main() {
 	sort(copy.begin(), copy.end());
 	copy.erase(unique(copy.begin(), copy.end()), copy.end());
 
-	// 선형탐색 -> 시간초과
-	/*for (int i = 0; i < n; i++) {
-		cout << find(copy.begin(), copy.end(), coordinate[i]) - copy.begin() << ' ';
-	}*/
-
-	// 값을 압축된 값으로 매핑
-	unordered_map<int, int> compress;
-	for (int i = 0; i < copy.size(); i++) {
-		compress[copy[i]] = i;
-	}
-
 	for (int i = 0; i < n; i++) {
-		cout << compress[coordinate[i]] << ' ';
-	}
+        // lower_bound를 사용하여 이분 탐색
+        cout << lower_bound(copy.begin(), copy.end(), coordinate[i]) - copy.begin() << ' ';
+    }
 }
