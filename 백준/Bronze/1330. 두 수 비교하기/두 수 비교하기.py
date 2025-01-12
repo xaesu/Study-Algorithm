@@ -1,8 +1,10 @@
-num = input().split()
+nums = input().split()
+a = int(nums[0])
+b = int(nums[1])
 
-if int(num[0]) > int(num[1]):
-  print(">")
-elif int(num[0]) < int(num[1]):
-  print("<")
+if a > b:
+    print('>')
+elif a < b:
+    print('<')
 else :
-  print("==")
+    print('==')
